@@ -30,7 +30,7 @@
 .\Checksum_Generator.exe -f input.txt
 ```
 
-2. 计算同目录下 “input.txt” 文件的 ==sha1值==并==输出到“answer.txt”文件中==
+2. 计算同目录下 “input.txt” 文件的 sha1值并输出到“answer.txt”文件中
 
 ```
 .\Checksum_Generator.exe -f input.txt -mode sha1 -o answer.txt
