@@ -16,7 +16,7 @@
         输入文件的路径 绝对路径或者是相对路径
 -mode (string)
         加密的方式 md5 / sha1 / sha256 / sha512 / all (default "md5")
--output_path (string)
+-o (string)
         结果的输出路径 (default "output.txt")
 ```
 
@@ -33,7 +33,7 @@
 2. 计算同目录下 “input.txt” 文件的 ==sha1值==并==输出到“answer.txt”文件中==
 
 ```
-.\Checksum_Generator.exe -f input.txt -mode sha1 -output_path answer.txt
+.\Checksum_Generator.exe -f input.txt -mode sha1 -o answer.txt
 ```
 
 3. 计算同目录下 “game.txt” 文件所有的值
