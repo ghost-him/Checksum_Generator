@@ -33,7 +33,7 @@ var (
 func init() {
 	flag.StringVar(&file_path, "f", "", "文件的路径 绝对路径或者是相对路径")
 	flag.StringVar(&mode, "mode", "md5", "加密的方式 md5 / sha1 / sha256 / sha512 / all")
-	flag.StringVar(&file_output_path, "output_path", "output.txt", "结果的输出路径")
+	flag.StringVar(&file_output_path, "o", "output.txt", "结果的输出路径")
 	flag.Parse() // 读取命令行
 	// 获取当前文件的目录
 	if filepath.IsAbs(file_path) {
