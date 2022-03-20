@@ -38,7 +38,7 @@ func init() {
 	var slice = []string{} // 临时的切片
 	var modeT string       // 临时的变量
 	flag.StringVar(&file_path, "f", "", "文件的路径 绝对路径或者是相对路径")
-	flag.StringVar(&modeT, "mode", "md5", "加密的方式 md5 / sha1 / sha256 / sha512 / all")
+	flag.StringVar(&modeT, "mode", "md5", "加密的方式 md5 / sha1 / sha256 / sha512 / all 通过 , 来实现多种模式的组合")
 	flag.StringVar(&file_output_path, "o", "", "结果的输出路径, 若不填则不生成文件")
 	flag.Parse() // 读取命令行
 
