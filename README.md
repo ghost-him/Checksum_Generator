@@ -12,11 +12,11 @@
 ```
 
 ```
--f string
+  -f string
         文件的路径 绝对路径或者是相对路径
--mode string
-        加密的方式 md5 / sha1 / sha256 / sha512 / all (default "md5")
--o string
+  -mode string
+        加密的方式 md5 / sha1 / sha256 / sha512 / all 通过 , 来实现多种模式的组合 (default "md5")
+  -o string
         结果的输出路径, 若不填则不生成文件
 ```
 
