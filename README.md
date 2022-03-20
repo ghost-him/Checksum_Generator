@@ -30,10 +30,10 @@
 .\Checksum_Generator.exe -f input.txt
 ```
 
-2. 计算同目录下 “input.txt” 文件的 sha1值并输出到“answer.txt”文件中
+2. 计算同目录下 “input.txt” 文件的 sha1值和sha512值并输出到“answer.txt”文件中
 
 ```
-.\Checksum_Generator.exe -f input.txt -mode sha1 -o answer.txt
+.\Checksum_Generator.exe -f input.txt -mode sha1,sha512 -o answer.txt
 ```
 
 3. 计算同目录下 “game.txt” 文件所有的值并输出到“answer.txt”文件中
