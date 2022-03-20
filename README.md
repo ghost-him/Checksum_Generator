@@ -12,19 +12,19 @@
 ```
 
 ```
--f (string)
-        输入文件的路径 绝对路径或者是相对路径
--mode (string)
+-f string
+        文件的路径 绝对路径或者是相对路径
+-mode string
         加密的方式 md5 / sha1 / sha256 / sha512 / all (default "md5")
--o (string)
-        结果的输出路径 (default "output.txt")
+-o string
+        结果的输出路径, 若不填则不生成文件
 ```
 
 
 
 **示例**
 
-1. 计算同目录下 “input.txt” 文件的 md5值
+1. 计算同目录下 “input.txt” 文件的 md5值, 结果不输出到文件
 
 ```
 .\Checksum_Generator.exe -f input.txt
@@ -36,15 +36,20 @@
 .\Checksum_Generator.exe -f input.txt -mode sha1 -o answer.txt
 ```
 
-3. 计算同目录下 “game.txt” 文件所有的值
+3. 计算同目录下 “game.txt” 文件所有的值并输出到“answer.txt”文件中
 
 ```
-.\Checksum_Generator.exe -f game.txt -mode all
+.\Checksum_Generator.exe -f game.txt -mode all -o answer.txt
 ```
 
-4. 计算桌面上的“test.txt”文件的sha256的值
+4. 计算桌面上的“test.txt”文件的sha256的值, 结果不输出到文件
 
 ```
 .\Checksum_Generator.exe -f C:\Users\ghost\Desktop\test.txt -mode sha256
 ```
 
+5. 计算同目录下的“test.txt”文件的sha512的值, 不输出文件
+
+```
+.\Checksum_Generator.exe -f test.txt -mode sha512
+```
